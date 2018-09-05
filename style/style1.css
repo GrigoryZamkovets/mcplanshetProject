@@ -1,0 +1,963 @@
+
+* {
+    margin: 0;
+    padding: 0; 
+    color: white;
+    font-size: 100%;
+    font-family: cursive, 'comic sans ms', sans-serif;
+    text-decoration: none;
+    outline: none;
+    cursor: default;
+}
+
+a, a img {
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /*ie8 */
+}
+
+.clear {
+    clear: both;
+    height: 20px;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+/*  header  */
+
+header {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    min-width: 1340px;
+    box-sizing: border-box;
+    min-height: 114px;
+    border: 2px solid grey;
+    margin: auto;
+}   
+
+header img {
+    width: 80px;
+    height: 80px;
+    border: 2px solid grey;
+    margin: 14px;
+    float: left;
+}   
+
+header #logo {
+    background-color: white;
+    width: 50%;
+    height: 80px;
+    margin: auto;
+    margin-top: 15px;
+}   
+
+#menu {
+    width: 80%;
+    min-width: 1088px;
+    margin-left: 10%;
+    box-sizing: border-box;
+    min-height: 65px;
+    border: 2px solid grey;
+    border-top: none;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#menu a {
+    padding: 0 20px;
+}           
+
+#menu a:hover {
+    color: red;
+    transition: color 1s;
+}
+
+#menu span {
+    padding: 0 20px;
+    cursor: pointer;
+}           
+
+#menu span:hover {
+    color: red;
+    transition: color 1s;
+}
+
+#menu li {
+    list-style: none;
+    display: inline-block;
+}   
+
+#menu .menu-item {
+    display: inline-block;
+    position: relative;
+}   
+
+#menu .menu-item .submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    border: 2px solid grey;
+    padding: 5px 0;
+    background-color: rgb(0, 0, 0);
+}
+
+#menu .menu-item .submenu hr {
+    color: grey;
+    width: 130px;
+    margin: auto;
+}   
+
+/*  footer  */
+
+.footer {
+    width: 100%;
+    min-width: 1340px;
+    min-height: 114px;
+    box-sizing: border-box;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid grey;
+    margin: 9px auto 0;
+    clear: both;
+}   
+
+.footer .links {
+    float: right;
+    padding: 20px 30px;
+}
+
+.footer .links:last-child img {
+    border-radius: 3px;
+}
+
+.footer #advertizing-footer {
+    background-color: green;
+    width: 50%;
+    text-align: center;
+    float: left;
+    margin-left: 25%;
+    margin-top: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer2 {
+    width: 100%;
+    min-width: 1340px;
+    box-sizing: border-box;
+    margin: auto;
+}   
+
+.footer2 .copyright {
+    display: inline-block;
+    font-size: 75%;
+    padding: 20px 20px 30px 20px;
+} 
+
+.footer2 .production {
+    font-size: 75%;
+    float: right;
+    padding: 20px 30px 30px 30px;
+} 
+
+/* центральная часть index.php */
+
+.wrapper {
+    width: 100%;
+    margin: auto;
+    min-width: 1360px;
+    box-sizing: border-box;
+}
+
+#center-panel {
+    width: 72%;
+    min-width: 979px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    cursor: default;
+    float: left;
+    padding-top: 10px;
+}   
+
+#center-panel .first-poster {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 48%;
+    margin: 0 1% 20px 1%;
+    padding: 15px;
+    float: left;
+}
+
+#center-panel .first-poster img {
+    float: left;
+    width: 40%;
+    max-width: 250px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 1px;
+}
+
+#center-panel .first-poster h2 {
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.3;
+
+}
+
+#center-panel .first-poster h2 a {
+    color: silver;
+}
+
+#center-panel .first-poster h2 a:hover {
+    text-decoration: underline;
+}
+
+#center-panel .first-poster p {
+    font: normal 80% serif; 
+}
+
+#center-panel .first-poster p a {
+    font: inherit; 
+    color: silver;
+}
+
+#center-panel .first-poster p a:hover {
+    color: red;
+    transition: color 1s;
+
+}
+
+#center-panel .paginator {
+    clear: both;
+    padding-bottom: 15px;
+}
+
+#center-panel .paginator a {
+    padding-left: 200px;
+}
+
+#center-panel .paginator a:hover {
+    color: red;
+    transition: color 1s;
+}
+
+/* центральная часть announcement.php */
+
+#center-panel .error-base {
+    font-size: 120%;
+    width: 90%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#announcement {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 90%;
+    margin: 5px 5% 20px 5%;
+    padding: 15px;
+    float: left;
+}
+
+#announcement img {
+    float: left;
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 1px;
+}
+
+#announcement h2 {
+    color: silver;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+#announcement hr {
+    border: 1px solid white;
+    margin: 0px 10px 10px 0px;
+}
+
+#announcement p {
+    font: normal 100%/1.2 serif; 
+    margin-bottom: 15px;
+}
+
+#announcement a {
+    margin-top: 10px;
+    font: inherit; 
+    color: silver;
+}
+
+#announcement a:hover {
+    color: red;
+    transition: color 1s;
+
+}
+
+/* блок рекламы */
+
+.aside2 {
+    width: 11%;
+    min-width: 150px;
+    height: 520px;
+    box-sizing: border-box;
+    float: left;
+    margin: 0 2% 20px 1%;
+    padding: 10px;
+    text-align: center;
+}   
+
+.advertizing {
+    background: grey;
+    margin: 20px 0 30px;
+    padding: 15px 5px 20px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}   
+
+.advertizing img {
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    border-radius: 5px;
+    cursor: inherit;
+}   
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 140px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+}   
+
+.close:hover {
+    color: red;
+}   
+
+.modal-content {
+    margin: auto;
+    display: block;
+    height: 60%;
+    width: auto;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .modal-content {width: 100%;}
+}
+
+#caption {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    padding: 20px 0;
+}   
+
+/* боковая часть news.php */
+
+.aside1 {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 12%;
+    min-width: 163px; 
+    float: left;
+    margin: 30px 1% 25px 1%;
+    padding: 0 10px 10px 10px;
+    line-height: 100%;
+}   
+
+.aside1 .news-date {
+    list-style: none;
+    text-align: center;
+}
+
+.aside1 .news-date p {
+    padding: 15px;
+}
+
+.aside1 .news-date li {
+    padding: 5px;
+    font-size: 80%;
+}   
+
+.aside1 .news-date li a:hover {
+    text-decoration: underline;
+}
+
+/* центральная часть news.php */
+
+#news-content {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+}
+
+#news-content .news {
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    text-align: left;
+}
+
+#news-content .news:hover {
+    background-color: #2e2e2e;
+}
+
+#news-content .news img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 10px 10px 10px 0;
+    cursor: inherit;
+}
+
+#news-content .news p {
+    padding-top: 10px;
+    cursor: inherit;
+}
+
+#news-content .news span {
+    color: silver;
+    font-size: 80%;
+    font-weight: bold;
+    cursor: inherit;
+}
+
+#news-content .news hr {
+    clear: both;
+    margin-bottom: 0;
+}
+
+#news-content .paginator {
+    clear: both;
+    padding-top: 10px;
+}
+
+#news-content .paginator a {
+    padding-left: 17%;
+}
+
+#news-content .paginator a:hover {
+    color: red;
+    transition: color 1s;
+}
+
+/* центральная часть article.php */
+
+#article {
+    background-color: rgb(0, 0, 0);
+    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 90%;
+    margin: 5px 5% 20px 5%;
+    padding: 15px;
+    float: left;
+}
+
+#article img {
+    float: left;
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 1px;
+}
+
+#article h2 {
+    color: silver;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 125%;
+    line-height: 1.2;
+}
+
+#article hr {
+    border: 1px solid white;
+    margin: 10px 10px 10px 0px;
+}
+
+#article p {
+    font: normal 100%/1.2 serif; 
+    margin-bottom: 15px;
+}
+
+#article p i {
+    font: italic normal 100%/1.2 serif;
+}
+
+#article .iframe-video {
+    margin: auto;
+    text-align: center;
+}
+
+#article .iframe-video iframe {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#article a {
+    margin-top: 10px;
+    font: inherit; 
+    color: silver;
+}
+
+#article a:hover {
+    color: red;
+    transition: color 1s;
+
+}
+
+#center-panel > a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#center-panel > a:hover {
+    color: red;
+    transition: color 1s;
+}
+
+#article .views {
+    float: right;
+    width: 20%;
+    box-sizing: border-box;
+    text-align: right;
+    margin-right: 10px;
+    color: silver;
+}
+
+/* блок комментариев для article.php и foto.php */
+
+#center-panel .error {
+    color: red;
+    margin-top: 10px;
+}
+
+#center-panel .success {
+    color: green;
+    margin-top: 10px;
+}
+
+#center-panel #comment {
+    background-color: rgb(0, 0, 0);
+    display: none;
+    clear: both;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    width: 90%;
+    margin: 0px 5% 20px 5%;
+    padding-bottom: 10px;
+    float: left;
+    text-align: center;
+}
+
+#center-panel #comment p {
+    margin: 10px 0 10px 0;
+}
+
+#center-panel #comment input {
+    background: black;
+    padding: 2px 10px;
+    width: 150px;
+}
+
+#center-panel #comment textarea {
+    background-color: black;
+    resize: none;
+    border: 2px solid grey;
+    padding: 2px 10px 6px 10px;
+    width: 300px;
+}
+
+#center-panel #comment textarea:focus {
+    border: 2px solid silver;
+}
+
+#center-panel #comment input[name='name']:focus {
+    border: 2px solid silver;
+}
+
+#center-panel #comment input[name='done'] {
+    margin-top: 15px;
+}
+
+#center-panel #comment input[name='done']:hover {
+    border: 2px solid #afebf8;
+}
+
+#center-panel #comments {
+    background-color: black;
+    border: 2px solid grey;
+    clear: both;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0px 5% 20px 5%;
+    padding: 5px 15px 15px 15px;
+    float: left;
+}
+
+#center-panel #comments .item-comment {
+    padding-top: 5px;
+}
+
+#center-panel #comments .item-comment span {
+    color: silver;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+#center-panel #comments .item-comment strong {
+    font-size: 90%;
+    padding-left: 5px;
+}
+
+#center-panel #comments .item-comment div {
+    margin-bottom: 10px;
+}
+
+/* центральная часть music1.php и music2.php */
+
+#center-panel .albums {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 15px;
+}
+
+#center-panel .albums hr {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+#center-panel .albums img {
+    float: left;
+    width: 40%;
+    height: auto;
+    border: 1px solid grey;
+    margin-right: 20px;
+    margin-bottom: 15px;
+}
+
+#center-panel .album-content {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+#center-panel .album-content h2 {
+    margin-bottom: 10px;
+    font-size: 110%;
+    font-weight: 200;
+}
+
+#center-panel .album-content p {
+    margin-bottom: 5px;
+    font: bold 90% serif;
+}
+
+#center-panel .album-content a {
+    display: block;
+    margin-top: 10px;
+    font: normal 110% serif;
+}
+
+#center-panel .album-content a:hover {
+    color: green;
+    transition: color 1s;
+}
+
+/* центральная часть video.php */
+
+#center-panel .video {
+    background-color: rgb(0, 0, 0);
+    width: 80%;
+    margin-left: 10%;
+    padding-top: 20px;
+}
+
+#center-panel .video iframe {
+    display: block;
+    margin: auto;
+    width: 650px;
+    height: 365px;
+}
+
+#center-panel .video hr {
+    margin-top: 20px;
+}
+
+/* центральная часть fotos.php */
+
+#center-panel .fotos {
+    margin-top: 10px;
+}
+
+#center-panel .fotos img {
+    max-width: 300px;
+    height: 200px;
+    float: left;
+    margin-right: 20px;
+    margin: 10px 0 10px 15px;
+}
+
+#center-panel .year-fotos {
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+/* центральная часть foto.php */
+
+#center-panel #foto {
+    background-color: black;
+    box-sizing: border-box;
+    width: 90%;
+    margin: -10px 5% 20px 5%;
+    padding: 30px 30px 20px 30px;
+    float: left;
+}
+
+#center-panel #foto img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin: auto;
+    margin-bottom: 10px;
+    border: 1px solid silver;
+    border-radius: 1px;
+}
+
+#center-panel #foto h2 {
+    text-align: center;
+    color: silver;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 125%;
+    line-height: 1.2;
+}
+
+#center-panel #foto hr {
+    border: 1px solid white;
+    margin: 15px 0px 10px 0px;
+}
+
+#center-panel #foto a {
+    margin-top: 10px;
+    font: inherit; 
+    color: silver;
+}
+
+#center-panel #foto a:hover {
+    color: red;
+    transition: color 1s;
+
+}
+
+#center-panel #foto .paginator-foto {
+    text-align: center;
+}
+
+#center-panel #foto .paginator-foto a {
+    color: white;
+}
+
+/* центральная часть contact.php */
+
+#contact {
+    background-color: black;
+    width: 80%;
+    margin: 5px 14% 20px 6%;
+    box-sizing: border-box;
+    padding: 20px 10px 20px 30px;
+    float: left;
+}
+
+#contact h2 {
+    font-size: 120%;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+#contact #cont1, #contact #cont3 {
+    font-size: 80%;
+    margin: 40px 0;
+    line-height: 1.3;
+}
+
+#contact #cont2 {
+    font-size: 70%;
+    margin: 40px 0;
+    line-height: 1;
+}
+
+#contact a:hover {
+    color: red;
+    transition: color 1s;
+}
+
+#contact #form {
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+}
+
+#contact #form table span {
+    line-height: 2.5;
+}
+
+#contact #form table .error {
+    color: red;
+    padding-left: 10px;
+}
+
+#contact #form #message {
+    display: block;
+    margin-top: 6px;
+    padding: 10px;
+    border: 2px solid grey;
+    box-sizing: border-box;
+    resize: none;
+    background-color: black;
+}
+
+#contact #form table .send {
+    margin-top: 6px;
+    padding: 2px 10px;
+    border: 1px solid grey;
+    background: black;
+}
+
+#contact #form .send:focus, #contact #form #message:focus {
+    border: 2px solid silver;
+}
+
+#contact #form #send {
+    margin-top: 8px;
+    cursor: pointer;
+    padding: 0 10px 3px 10px;
+    background-color: black;
+}
+
+#contact #form #send:hover {
+    border: 2px solid #afebf8;
+}
+
+#contact #messageShow {
+    display: none;
+    width: 80%;
+    clear: both;
+}
+
+#contact #messageShow h2 {
+    margin-top: 80px;
+    margin-bottom: 70px;
+}
+
+#contact #messageShow a {
+    line-height: 2;
+}
+
+/* адаптивность сайта */
+
+/* размер экрана 1360 на 768 */
+
+@media (min-width: 1361px) {
+    #menu {
+        max-width: 1360px;
+        margin: auto;
+    }
+
+    .wrapper {
+        max-width: 1800px;
+    }
+
+    header {
+        max-width: 1800px;
+    }
+
+    .footer {
+        max-width: 1800px;
+    }
+
+    .footer2 {
+        max-width: 1800px;
+    }
+}  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
