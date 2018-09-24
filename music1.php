@@ -15,7 +15,7 @@
     // закрытие соединения с pdo
     closeDB();
  
-    $title = 'mc planshet music';
+    $title = 'mcplanshet music';
     require_once "blocks/head.php";
   ?>
 
@@ -23,9 +23,6 @@
       body {
         background: fixed url(/images/background_foto/3.jpg) 50% 50% no-repeat;
         background-size: cover;
-        /*background-repeat: no-repeat;*/
-        /*background-attachment: fixed;
-        background-position: 100% 100%;*/
       }
   </style>  
 

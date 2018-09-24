@@ -1,9 +1,3 @@
-<?php
-    include_once "blocks/nocache.php";
-    nocache();
-
-?>    
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,9 +12,6 @@
       body {
         background: fixed url(/images/background_foto/1.jpg) 0% 20% no-repeat;
         background-size: cover;
-        /*background-repeat: no-repeat;*/
-        /*background-attachment: fixed;
-        background-position: 100% 100%;*/
       }
   </style> 
    

@@ -1,14 +1,4 @@
 <?php
-
-	// сообщение об ошибке 404
-	$is404 = false;
-
-	function show404() {
-		header('HTTP/1.1 404 Not Found');
-		global $is404;
-		$is404 = true;
-	}
-
 	// работа с базой данных mcplanshet_base (PDO)
 	$db = false;
 	$query = false;

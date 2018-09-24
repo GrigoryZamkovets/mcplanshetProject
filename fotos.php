@@ -24,9 +24,6 @@
       body {
         background: fixed url(/images/background_foto/5.jpg) 0% 20% no-repeat;
         background-size: cover;
-        /*background-repeat: no-repeat;*/
-        /*background-attachment: fixed;
-        background-position: 100% 100%;*/
       }
   </style>  
 

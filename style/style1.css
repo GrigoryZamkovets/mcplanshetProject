@@ -34,7 +34,8 @@ header {
     background-color: rgb(0, 0, 0);
     width: 100%;
     min-width: 1340px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     min-height: 114px;
     border: 2px solid grey;
     margin: auto;
@@ -60,7 +61,8 @@ header #logo {
     width: 80%;
     min-width: 1088px;
     margin-left: 10%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     min-height: 65px;
     border: 2px solid grey;
     border-top: none;
@@ -76,6 +78,8 @@ header #logo {
 
 #menu a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
@@ -86,6 +90,8 @@ header #logo {
 
 #menu span:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
@@ -120,7 +126,8 @@ header #logo {
     width: 100%;
     min-width: 1340px;
     min-height: 114px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     background-color: rgb(0, 0, 0);
     border: 2px solid grey;
     margin: 9px auto 0;
@@ -143,7 +150,8 @@ header #logo {
     float: left;
     margin-left: 25%;
     margin-top: 20px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 20px;
     border-radius: 5px;
 }
@@ -151,7 +159,8 @@ header #logo {
 .footer2 {
     width: 100%;
     min-width: 1340px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: auto;
 }   
 
@@ -173,7 +182,8 @@ header #logo {
     width: 100%;
     margin: auto;
     min-width: 1360px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 #center-panel {
@@ -189,7 +199,8 @@ header #logo {
 
 #center-panel .first-poster {
     background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 2px solid grey;
     width: 48%;
     margin: 0 1% 20px 1%;
@@ -234,6 +245,8 @@ header #logo {
 
 #center-panel .first-poster p a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 
 }
@@ -249,6 +262,8 @@ header #logo {
 
 #center-panel .paginator a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
@@ -257,7 +272,8 @@ header #logo {
 #center-panel .error-base {
     font-size: 120%;
     width: 90%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: center;
     margin: auto;
     margin-top: 20px;
@@ -265,7 +281,8 @@ header #logo {
 
 #announcement {
     background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 2px solid grey;
     width: 90%;
     margin: 5px 5% 20px 5%;
@@ -311,6 +328,8 @@ header #logo {
 
 #announcement a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 
 }
@@ -321,7 +340,8 @@ header #logo {
     width: 11%;
     min-width: 150px;
     height: 520px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     float: left;
     margin: 0 1% 20px 1%;
     padding: 10px;
@@ -364,6 +384,8 @@ header #logo {
     right: 35px;
     font-size: 30px;
     font-weight: bold;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
     transition: 0.5s;
     cursor: pointer;
 }   
@@ -398,7 +420,8 @@ header #logo {
 
 .aside1 {
     background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 2px solid grey;
     width: 12%;
     min-width: 163px; 
@@ -482,6 +505,8 @@ header #logo {
 
 #news-content .paginator a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
@@ -489,7 +514,8 @@ header #logo {
 
 #article {
     background-color: rgb(0, 0, 0);
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 2px solid grey;
     width: 90%;
     margin: 5px 5% 20px 5%;
@@ -549,6 +575,8 @@ header #logo {
 
 #article a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 
 }
@@ -562,13 +590,16 @@ header #logo {
 
 #center-panel > a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
 #article .views {
     float: right;
     width: 20%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     text-align: right;
     margin-right: 10px;
     color: silver;
@@ -590,7 +621,8 @@ header #logo {
     background-color: rgb(0, 0, 0);
     display: none;
     clear: both;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     border: 2px solid grey;
     width: 90%;
     margin: 0px 5% 20px 5%;
@@ -637,7 +669,8 @@ header #logo {
     background-color: black;
     border: 2px solid grey;
     clear: both;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 90%;
     margin: 0px 5% 20px 5%;
     padding: 5px 15px 15px 15px;
@@ -710,6 +743,8 @@ header #logo {
 
 #center-panel .album-content a:hover {
     color: green;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
@@ -757,7 +792,8 @@ header #logo {
 
 #center-panel #foto {
     background-color: black;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     width: 90%;
     margin: 0 5% 20px 5%;
     padding: 30px 30px 20px 30px;
@@ -798,6 +834,8 @@ header #logo {
 
 #center-panel #foto a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 
 }
@@ -816,7 +854,8 @@ header #logo {
     background-color: black;
     width: 88%;
     margin: 5px 6% 20px 6%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 20px 10px 20px 30px;
     float: left;
 }
@@ -841,13 +880,16 @@ header #logo {
 
 #contact a:hover {
     color: red;
+    -webkit-transition: color 1s;
+    -o-transition: color 1s;
     transition: color 1s;
 }
 
 #contact #form {
     margin-top: 20px;
     width: 100%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: none;
 }
 
@@ -865,7 +907,8 @@ header #logo {
     margin-top: 6px;
     padding: 10px;
     border: 2px solid grey;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     resize: none;
     background-color: black;
 }

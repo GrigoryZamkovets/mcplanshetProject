@@ -17,16 +17,11 @@
       $error_base = 'Connect Error: '.mysqli_connect_error;
     }
 
-    //try {
     $query = $db->prepare("INSERT INTO `comments_foto` SET name=:name, text=:text, dt=:time, id_foto=:id_foto");
     $params = array ('name' => $name, 'text' => $text, 'time' => $time, 'id_foto' => $id_foto);
     $query->execute($params);
-	// } catch (PDOException $e) {
-	// 	echo "Ошибка выполнения запроса: " . $e->getMessage();
-	// }
 
 	if ($query) {
-		//echo 'комментарий успешно добавлен!';
 		echo date("d.m.Y H:i:s", $time);
 	} else {
 		echo 'ошибка при добавлении комментария!';

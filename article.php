@@ -1,8 +1,3 @@
-<?php
-    include_once "blocks/nocache.php";
-    nocache();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,7 +86,6 @@
         var date = new Date();
         var time = Date.now();
         time = Math.floor(time/1000);
-        // var dt = date.getDate() + "." + date.getMonth() + "." + date.getFullYear() + " " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
 
         if (name == "") {
             errors[errors.length] = 'введите ваше имя!';
@@ -137,9 +131,6 @@
       body {
         background: fixed url(/images/background_foto/2.jpg) 0% 20% no-repeat;
         background-size: cover;
-        /*background-repeat: no-repeat;*/
-        /*background-attachment: fixed;
-        background-position: 100% 100%;*/
       }
   </style> 
 
