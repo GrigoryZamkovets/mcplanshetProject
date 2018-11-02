@@ -36,15 +36,25 @@ window.onload = function() {
     // корректировка высоты блоков first-poster
     var blocks = document.getElementsByClassName('first-poster');
 
-    for (var j = 1; j <= blocks.length; j = j + 2) {
-        var height1 = blocks[j-1].offsetHeight;
-        var height2 = blocks[j].offsetHeight;
-        if (height1 >= height2) {
-            blocks[j].style.height = height1 + 'px';
-        } else {
-            blocks[j-1].style.height = height2 + 'px';
-        }
-    } 
+    function equalHeight() {
+        for (var j = 0; j < blocks.length; j++) {
+            blocks[j].style.height = 'auto';
+        } 
+
+        for (var j = 1; j <= blocks.length; j = j + 2) {
+            var height1 = blocks[j-1].offsetHeight;
+            var height2 = blocks[j].offsetHeight;
+            if (height1 >= height2) {
+                blocks[j].style.height = height1 + 'px';
+            } else {
+                blocks[j-1].style.height = height2 + 'px';
+            }
+        } 
+    }
+
+    equalHeight();
+
+    
 
     // корректировка размеров background-контейнера
     var container = document.getElementsByClassName('container')[0];
@@ -61,7 +71,7 @@ window.onload = function() {
     container.style.width = xscreen + 'px';
     container.style.height = yscreen + 'px';  
 
-    // изменение background-контейнера при изменении размеров окна
+    // изменение background-контейнера и размеров статей при изменении размеров окна
     window.onresize = function() {
         xscreen = window.clientWidth;
         scrollHeight = Math.max(
@@ -76,15 +86,7 @@ window.onload = function() {
         container.style.width = xscreen + 'px';
         container.style.height = yscreen + 'px';
 
-        for (var j = 1; j <= blocks.length; j = j + 2) {
-            var height1 = blocks[j-1].offsetHeight;
-            var height2 = blocks[j].offsetHeight;
-            if (height1 >= height2) {
-                blocks[j].style.height = height1 + 'px';
-            } else {
-                blocks[j-1].style.height = height2 + 'px';
-            }
-        } 
+        equalHeight();
     }
 
 }
