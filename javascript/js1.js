@@ -76,7 +76,8 @@ window.onload = function() {
         container.style.width = xscreen + 'px';
         container.style.height = yscreen + 'px';  
     }
-    
+
+    sizeBG();
 
     // изменение background-контейнера и размеров статей при изменении размеров окна
     window.onresize = function() {
