@@ -54,38 +54,33 @@ window.onload = function() {
 
     equalHeight();
 
-    
-
     // корректировка размеров background-контейнера
     var container = document.getElementsByClassName('container')[0];
-    var xscreen = window.clientWidth;
-    var scrollHeight = Math.max(
-        document.body.scrollHeight,
-        container.scrollHeight,
-        document.body.offsetHeight,
-        container.offsetHeight,
-        document.body.clientHeight,
-        container.clientHeight
-    ); 
-    var yscreen = scrollHeight;
-    container.style.width = xscreen + 'px';
-    container.style.height = yscreen + 'px';  
+
+    function sizeBG() {
+        container.style.width = 'auto';
+        container.style.height = 'auto'; 
+
+        var scrollWidth = Math.max(
+            document.body.scrollWidth, document.documentElement.scrollWidth,
+            document.body.offsetWidth, document.documentElement.offsetWidth,
+            document.body.clientWidth, document.documentElement.clientWidth
+        ); 
+        var xscreen = scrollWidth;
+        var scrollHeight = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        ); 
+        var yscreen = scrollHeight;
+        container.style.width = xscreen + 'px';
+        container.style.height = yscreen + 'px';  
+    }
+    
 
     // изменение background-контейнера и размеров статей при изменении размеров окна
     window.onresize = function() {
-        xscreen = window.clientWidth;
-        scrollHeight = Math.max(
-            document.body.scrollHeight,
-            container.scrollHeight,
-            document.body.offsetHeight,
-            container.offsetHeight,
-            document.body.clientHeight,
-            container.clientHeight
-        ); 
-        yscreen = scrollHeight;
-        container.style.width = xscreen + 'px';
-        container.style.height = yscreen + 'px';
-
+        sizeBG();
         equalHeight();
     }
 
